@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import './Navbar.css';
+import {Link} from 'react-scroll';
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -59,8 +60,17 @@ function Navbar() {
                 ROADMAP
               </Link>
             </li>
+            <li className='nav-item'>
+              <Link
+                to='/products'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                FAQ
+              </Link>
+            </li>
 
-            <li>
+            {/* <li>
               <Link
                 to='/sign-up'
                 className='nav-links-mobile'
@@ -68,9 +78,9 @@ function Navbar() {
               >
                 FAQ
               </Link>
-            </li>
+            </li> */}
           </ul>
-          {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+          {/* {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>} */}
         </div>
       </nav>
     </>

@@ -1,10 +1,24 @@
-.cards {
+.buy-elf {
   padding: 4rem;
-  background: #fff;
+  background:  #1005BF;
+  height: 250px;
+  position: relative;
+}
+
+.buy-elf-container {
+  max-width: 1400px;
+}
+
+.buy-mountains {
+  position: absolute;
+    left: 190px;
+    bottom: -43px;
 }
 
 h1 {
   text-align: center;
+  color: #EC1513;
+  font-family: 'Fredoka One';
 }
 
 .cards__container {

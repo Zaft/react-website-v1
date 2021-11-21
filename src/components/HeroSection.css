@@ -7,15 +7,33 @@ video {
 }
 
 .hero-container {
-  /* background: url('/images/img-home.jpg') center center/cover no-repeat; */
-  height: 100vh;
+  /* background: url('/images/mountain-sunburst2.svg') center center/cover no-repeat; */
+  height: 800px;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
   object-fit: contain;
+  background-color:  #34A1C8;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.elf-1 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+.mountain-sunburst {
+    position: absolute;
+    right: 0;
+    bottom: -8px;
+    z-index: 1;
 }
 
 .hero-container > h1 {
